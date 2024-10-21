@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JChef Dashboard</title>
+    <link rel="stylesheet" href="db.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="images/WhatsApp Image 2024-10-21 at 10.48.45_15aefd5d.jpg" alt="JChef Logo">
+                <h1>Delicious</h1>
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Help</a>
+            </nav>
+            <div class="user-profile">
+                <img src="images/WhatsApp Image 2024-09-29 at 13.28.22_b55e1105.jpg" alt="User Avatar">
+                <span>{{ user }}</span> <!-- Dynamically display the user's name -->
+            </div>
+        </header>
+
+        <div class="dashboard-header">
+            <div class="plan-info">
+                <h2>Classic Plan</h2>
+                <!-- <span class="receiving-badge">Receiving</span> -->
+            </div>
+            <div class="menu-info">
+                <span>Menu for September 7th - September 14th</span>
+                <button class="calendar-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <!-- Calendar -->
+                </button>
+            </div>
+        </div>
+
+        <div class="recipe-grid">
+            <div class="recipe-card">
+                <div class="recipe-image" style="background-image: url(images/pasta.jpg);">
+                    <span class="selected-badge">Selected</span>
+                </div>
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Tasty Kosher Pastas</h3>
+                    <p class="recipe-description">Summer Pasta w/ Fresh and Delicious Squash, Radicchio, Basil, and more</p>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">15 - 20 min</span>
+                        <span class="recipe-type">Vegetarian</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-image" style="background-image: url(images/pasta.jpg);">
+                    <span class="selected-badge">Selected</span>
+                </div>
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Tasty Kosher Pastas</h3>
+                    <p class="recipe-description">Summer Pasta w/ Fresh and Delicious Squash, Radicchio, Basil, and more</p>
+                    <div class="recipe-meta">
+                        <span class="recipe-time">15 - 20 min</span>
+                        <span class="recipe-type">Vegetarian</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more recipe cards as needed -->
+        </div>
+    </div>
+</body>
+</html>
